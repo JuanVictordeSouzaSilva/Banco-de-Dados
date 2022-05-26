@@ -1,0 +1,125 @@
+select * from hr.employees
+
+--AULA 3 USANDO SELECT BASICO
+
+--1 Selecione todos os campos da tabela LOCATIONS
+select * from hr.locations 
+
+--2 Selecione todos os campos da tabela DEPARTMENTS
+select * from hr.departments
+
+--3 Selecione todos os campos da tabela COUNTRIES
+select * from hr.countries
+
+--4 Selecione todos os campos da tabela JOBS
+select * from hr.jobs
+
+--5 Selecione todos os campos da tabela REGIONS
+select * from hr.regions
+
+--6 Selecione todos os campos da tabela EMPLOYEES
+select * from hr.employees
+
+--7 Selecione todos os campos da tabela JOB_HISTORY
+select * from hr.job_history
+
+--8 Selecione os campos LOCATION_ID, CITY E STATE_PROVINCE da tabela LOCATIONS
+select location_id, city, state_province from hr.locations
+
+--9 Selecione os campos DEPAR…
+select * from hr.employees
+
+--AULA 3 USANDO SELECT BASICO
+
+--1 Selecione todos os campos da tabela LOCATIONS
+select * from hr.locations 
+
+--2 Selecione todos os campos da tabela DEPARTMENTS
+select * from hr.departments
+
+--3 Selecione todos os campos da tabela COUNTRIES
+select * from hr.countries
+
+--4 Selecione todos os campos da tabela JOBS
+select * from hr.jobs
+
+--5 Selecione todos os campos da tabela REGIONS
+select * from hr.regions
+
+--6 Selecione todos os campos da tabela EMPLOYEES
+select * from hr.employees
+
+--7 Selecione todos os campos da tabela JOB_HISTORY
+select * from hr.job_history
+
+--8 Selecione os campos LOCATION_ID, CITY E STATE_PROVINCE da tabela LOCATIONS
+select location_id, city, state_province from hr.locations
+
+--9 Selecione os campos DEPARTMENT_ID, DEPARTMENT_NAME e MANAGER_ID da tabela DEPARTMENTS
+select department_id, department_name, manager_id from hr.departments
+
+--10 Selecione os campos COUNTRY_ID e COUNTRY NAME da tabela COUNTRIES
+select country_id, country_name from hr.countries 
+
+--11 Selecione os campos JOB_TITLE e MAX_SALARY da tabela JOBS
+select job_title, max_salary from hr.jobs
+
+--12 Selecione o campo REGION_NAME da tabela REGIONS
+select region_name from hr.regions
+
+--13 Selecione os campos EMPLOYEE_ID, FIRST_NAME, LAST_NAME e SALARY da tabela EMPLOYEES
+select employee_id, first_name, last_name, salary from hr.employees
+
+--14 Selecione os campos EMPLOYEE_ID, START_DATE, END_DATE, JOB_ID, DEPARTMENT_ID da tabela JOB_HISTORY
+select employee_id, start_date, end_date, job_id, department_id from hr.job_history
+
+--Exercícios Utilizando Select Básico (crie apelidos para todos as colunas e tabelas):
+
+--1 Selecione todos os campos da tabela LOCATIONS.
+select a.location_id "codigo", 
+a.street_address "endereco", 
+a.postal_code "codigo postal", 
+a.city "cidade", 
+a.state_province "estado",
+a.country_id "codigo da cidade" from hr.locations a
+
+--2 Selecione todos os campos da tabela DEPARTMENTS.
+select a.department_id "departamento",
+a.department_name "nome do departamento",
+a.manager_id "gerente",
+a.location_id "codigo" from hr.departments a
+
+--3 Selecione todos os campos da tabela COUNTRIES.
+select a.country_id "codigo da cidade",
+a.country_name "nome do pais",
+a.region_id "numero da região" from hr.countries a
+
+--4 Selecione todos os campos da tabela JOBS.
+select a.job_id "id_do_trabalho ",
+a.job_title "titulo do trabalho",
+a.min_salary "salario minimo",
+a.max_salary "salario maximo" from hr.jobs a
+
+--5 Selecione todos os campos da tabela REGIONS.
+select a.region_id "id_da_regiao",
+a.region_name "nome da regiao" from hr.regions a
+
+--6 Selecione todos os campos da tabela EMPLOYEES.
+select a.employee_id "numero do empregado",
+a.first_name "primeiro nome",
+a.last_name "ultimo nome ",
+a.email "email",
+a.phone_number "numero de telefone",
+a.hire_date "dia da contratação",
+a.job_id "id_do_trabalho",
+a.salary "salario",
+a.commission_pct "comissao",
+a.manager_id "gerente",
+a.department_id "departamento" from hr.employees a
+
+--7 Selecione todos os campos da tabela JOB_HISTORY.
+select a.employee_id "numero do empregado",
+a.start_date "dia de inicio",
+a.end_date "dia final",
+a.job_id "id_do_trabalho ",
+a.department_id "departamento" from hr.job_history a
